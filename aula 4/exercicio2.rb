@@ -7,8 +7,8 @@ hash = {}
 
     hash[estado] = cidade
 end
-
-puts "Os estados informados são #{hash.keys} e as cidades são #{hash.values}"
-
+hash.each do |k, v|
+puts "O estado informado é #{k} e a cidade é #{v}"
+end
 
 

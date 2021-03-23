@@ -20,14 +20,14 @@ loop do
                 result = num1 * num2
             when "/"
                 result = num1 / num2
-    else
-        puts "Operação inválida!"
-    end
+        else
+            puts "Operação inválida!"
+        end
 
-    puts "O resultado é: #{result}"
+        puts "O resultado é: #{result}"
 
-    puts "Deseja realizar outro calculo? [y|n]"
-    continua = gets.chomp
+        puts "Deseja realizar outro calculo? [y|n]"
+        continua = gets.chomp
     else
         puts "Obrigado por usar a calculadora!"
         break

@@ -6,13 +6,13 @@
 
 class Carro
     def get_km (param)
-        find_km(param)
+        km = find_km(param)
+        puts km
     end
 
     private def find_km (param)
-        regex = Regexp.new(/80km\/h/)
-        retorno =  regex.match(param)
-        puts retorno
+        regex = Regexp.new(/\d{2,}km\/h/)
+        regex.match(param) 
     end
 end
 param = "Um fusca de cor amarela viaja a 80km/h"

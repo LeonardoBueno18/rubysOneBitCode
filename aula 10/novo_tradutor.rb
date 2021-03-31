@@ -32,20 +32,18 @@ class Tradutor
         #mostra a tradução
         puts traduzido
         #chama o metodo de gerar arquivo e passa os parametros
-        gerar_arquivo(@palavra, traduzido, @lingua, @lingua_original)
+        gerar_arquivo(traduzido)
     end
 
 
 
     #gerando o metodo de criar arquivo
-    private def  gerar_arquivo (original, traducao, lingua, lingua_original)
+    private def  gerar_arquivo (traducao)
         #instanciando o time
         time = Time.now
         #recebendo os valores para adição do arquivo
-        @original = original
         @traducao = traducao
-        @lingua_original = lingua_original
-        @lingua = lingua
+        
         #mascara de nome
         case @lingua_original 
         when "ru"
@@ -82,7 +80,7 @@ class Tradutor
         file = File.open(time.strftime("%m-%d-%Y.%H.%M.%S") + ".txt", 'a') do |lista|
 			lista.puts "Lingua original: #{@lingua_original} "
             lista.puts "-------------------------------------"
-            lista.puts @original
+            lista.puts @palavra
 			lista.puts "-------------------------------------"
             lista.puts "Lingua tradução: #{@lingua} "
             lista.puts "-------------------------------------"

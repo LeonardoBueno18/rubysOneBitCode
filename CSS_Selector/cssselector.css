@@ -1,0 +1,23 @@
+
+/*Livelo*/
+element :botaoCarrinhoLivelo, '#a-linkCart > span.icon-shopping-cart.cart-size'
+element :botaoLoginLivelo, '#span-loginInvitationText'
+/*ou*/
+element :botaoLoginLivelo, '#btn-login'
+
+element :botaoCadastroLivelo, '#span-createAccountText'
+/*ou*/
+element :botaoCadastroLivelo, '#btn-register'
+
+
+/*Divvino*/
+element :lupaDivvino, 'body > div.navbar_fixed_top > div.lsc > div > div > div.col.s50 > form > div.col.s9 > div > button'
+element :arrayCategoriaDivvino, 'body > div.navbar_fixed_top > div.main_menu > div > div > div > ul'
+element :boxDoProdutoDivvino, 'body > div.content > div.home > div > div > div.col.s80.conteudo_princ_content > div:nth-child(11)'
+element :irParaCarrinhoDivvino, '#cartContentHeader > div.cart_container > div > div:nth-child(2) > div > div > div.col.s40 > a'
+
+/*OrGames*/
+element :botaoFecharPromocaoOrGames, '#news-popup > div > div > span'
+element :campoDeBuscaOrGames, '#header > div > div.col-lg-5.col-md-4.col-sm-4.hidden-xs.searchbox > div.js-search-container.hidden-xs > form > input'
+element :botaoQuemSomosOrGames, 'body > div.footer.clear > div.footer2.container > div.col-lg-3.col-md-3.col-sm-6.col-xs-6.menu-about > ul > li:nth-child(2) > a'
+
